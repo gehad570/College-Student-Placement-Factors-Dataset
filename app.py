@@ -5,7 +5,9 @@ import joblib
 # ---------------------
 # تحميل الموديل (Random Forest)
 # ---------------------
-model_path = r"C:\\Users\\Gehad\\Downloads\\College_student\\model.pkl"
+model_path = "model.pkl"
+
+
 
 try:
     model = joblib.load(model_path)
@@ -51,6 +53,7 @@ if st.button("Predict Placement"):
 
     except Exception as e:
         st.error(f"❌ Prediction error: {e}")
+
 
 
 
